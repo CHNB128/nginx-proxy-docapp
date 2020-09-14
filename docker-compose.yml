@@ -25,3 +25,8 @@ services:
       - nginx-proxy
     environment:
       DEFAULT_EMAIL: ${CONTACT_EMAIL}
+
+networks:
+  default:
+    external:
+      name: network
